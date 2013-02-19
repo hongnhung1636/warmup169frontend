@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">warmup169ui</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="editUser">--username--</string>
+    <string name="editPassword">--password--</string>
+     <string name="welcome">Welcome, please login or add new user</string>
+    <color name="myColor">#F5F5F5</color>
+    <string name="loginCount">Signing in &#8230;</string>
+    <string name="result"></string>
+    <string name="result_success">Welcome, %1$s.\nYou have successfully logged in %2$d times.</string>
+
+</resources>

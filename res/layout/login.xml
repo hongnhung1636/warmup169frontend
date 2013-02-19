@@ -1,0 +1,116 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Login" >
+
+    <LinearLayout
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+
+        <TextView
+            android:id="@+id/textmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/loginCount" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:background="@drawable/gradientbackground"
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+		
+        <LinearLayout
+            android:layout_width ="match_parent"
+        	android:layout_height ="wrap_content"
+        	android:padding ="16dp"
+            android:orientation="vertical" >
+            
+            <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:text="@string/welcome"
+            android:textColor="#444444"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+            
+			
+		    <TextView
+		        android:layout_width="fill_parent"
+		        android:layout_height="match_parent"
+		        android:textSize="20sp"
+		        android:textStyle="bold"
+		        android:text="User Name" />
+    
+            <EditText
+                android:id="@+id/usernameText"
+                android:background ="@drawable/textborder"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"  />
+                       
+            <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="15dip"
+            android:textStyle="bold"
+            android:text="Password" />
+
+            <EditText
+                android:id="@+id/passwordText"
+                android:background ="@drawable/textborder"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:layout_marginBottom="30dip"
+                android:imeActionId="@+id/login"
+                android:inputType="textPassword"   />
+                     
+            <LinearLayout 
+	            android:layout_width ="match_parent"
+        		android:layout_height ="wrap_content"
+        		android:weightSum="100"
+	            android:orientation="horizontal" >
+
+	            <Button
+	                style = "@style/button"
+	                android:id="@+id/btnUsername"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="right"
+	                android:layout_weight="50"
+	                android:text="Sign In" />
+	 
+	            
+	            <Button
+	                style = "@style/button"
+	                android:id="@+id/btnAdd"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="right"
+	                android:layout_weight="50"
+	                android:text="Add New User" />
+	         </LinearLayout>
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize = "30sp"
+                android:textColor="#FF0000"
+                android:gravity="center"
+       			android:textStyle="bold"
+                android:text="@string/result"
+                 />
+
+        </LinearLayout>
+    </ScrollView>
+
+</merge>
