@@ -30,10 +30,7 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 import com.google.gson.Gson;
 
-/**
- * Activity which displays a login screen to the user, offering registration as
- * well.
- */
+
 public class Login extends Activity implements OnClickListener {
 
     public static final String view = Login.class.getName();
@@ -50,7 +47,6 @@ public class Login extends Activity implements OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
 
-        // Set up the login form.
         usernameText = (EditText) findViewById(R.id.usernameText);
         passwordText = (EditText) findViewById(R.id.passwordText);
         result = (TextView) findViewById(R.id.result);
